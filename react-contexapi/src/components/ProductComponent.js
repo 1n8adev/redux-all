@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductComponent = ({ productList }) => {
-  const products = productList;
+const ProductComponent = ({ products }) => {
   const renderList = products.map((product) => {
     const { id, title, image, price, category } = product;
     return (
